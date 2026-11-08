@@ -344,8 +344,13 @@ Compras
 <div class="brand-meta">
 <div><b>4</b><span>Refeições/dia</span></div>
 <div><b>2,5L</b><span>Água/dia</span></div>
-<div><b>30/10</b><span>Plano</span></div>
+<div><b>05/11</b><span>Plano</span></div>
 </div>
+</div>
+
+<div class="card" style="border-color:rgba(242,22,28,.3);padding:12px 14px">
+<div style="font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;color:var(--red-dk);margin-bottom:4px">AJUSTE · 05/11/2026</div>
+<div style="font-size:.8rem;color:var(--gray);line-height:1.55"><b style="color:var(--char)">O que mudou:</b> muçarela no café, leite no jantar, whey do lanche 20g, azeite saiu do almoço e entraram o lanche opção 2 (sanduíche de atum) e o jantar opção 2 (hambúrguer).</div>
 </div>
 
 <div class="card">
@@ -390,13 +395,25 @@ Compras
 <span>Semente de Girassol (5g)</span>
 </div>
 </div>
+<div class="food-item">
+<div class="food-main">🧀 Queijo Muçarela, 1 Fatia (20g) <span class="chg new">novo</span></div>
+<button class="food-toggle" onclick="toggleSubs(this)">Ver substituições ▾</button>
+<div class="food-subs">
+<span>Queijo de Coalho (15g)</span>
+<span>Queijo de Minas Frescal Orgânico (25g)</span>
+<span>Queijo Cottage (70g)</span>
+<span>Requeijão Cremoso Light (30g)</span>
+<span>Leite de Vaca Integral (105g)</span>
+<span>Leite em Pó Integral (13g)</span>
+</div>
+</div>
 <div class="recipe">
 <strong>💡 Sugestão: Pão com Ovo Gourmet</strong><br>
 1. Aqueça a frigideira em fogo médio e doure levemente as fatias de pão. Reserve.<br>
 2. Na mesma frigideira, cozinhe o ovo como preferir (gema mole ou dura).<br>
-3. Monte: tomates cereja cortados ao meio sobre o pão e o ovo por cima.<br>
+3. Monte: queijo sobre o pão, tomates cereja cortados ao meio por cima e o ovo por último.<br>
 4. Tempere com sal, pimenta e orégano a gosto.<br>
-5. Tampe a frigideira por alguns minutos para aquecer tudo. Sirva em seguida.
+5. Tampe a frigideira por alguns minutos para derreter o queijo e aquecer tudo. Sirva em seguida.
 </div>
 </div>
 
@@ -466,13 +483,12 @@ Compras
 <div class="food-main">🍊 Fruta rica em Vitamina C (Anexo 1)</div>
 </div>
 <div class="food-item">
-<div class="food-main">🫒 Azeite de Oliva Extravirgem, 1 Col. sopa rasa (8g)</div>
-</div>
-<div class="food-item">
 <div class="food-main">🍮 Doce de Leite (Industrializado), 1 Col. sopa (20g)</div>
 <button class="food-toggle" onclick="toggleSubs(this)">Ver substituições ▾</button>
 <div class="food-subs">
 <span>Leite Condensado (20g)</span>
+<span>Goiabada (20g)</span>
+<span>Doce de Banana (1 unidade)</span>
 </div>
 </div>
 <div class="recipe">
@@ -503,9 +519,58 @@ Compras
 <div class="food-main">🍎 Fruta (Anexo 1), 1 Porção</div>
 </div>
 <div class="food-item">
-<div class="food-main">💪 Whey Protein Concentrado (30g)</div>
+<div class="food-main">💪 Whey Protein Concentrado (20g) <span class="chg down">↓ era 30g</span></div>
 </div>
 </div>
+
+<div class="card">
+<div class="meal-header">
+<div class="meal-icon">🥪</div>
+<div><div class="meal-title">Lanche da Tarde</div><div class="meal-time">Opção 2 · alternativa</div></div>
+</div>
+<div class="food-item">
+<div class="food-main">🍞 Pão de Forma Integral, 2 Fatias médias (50g)</div>
+<button class="food-toggle" onclick="toggleSubs(this)">Ver substituições ▾</button>
+<div class="food-subs">
+<span>Rap10 Fit (Embalagem Azul) (50g)</span>
+<span>Goma de Tapioca (40g)</span>
+<span>Pão Francês (40g)</span>
+<span>Batata Inglesa Cozida (240g)</span>
+<span>Batata Doce Cozida (160g)</span>
+<span>Arroz Branco Cozido (95g)</span>
+</div>
+</div>
+<div class="food-item">
+<div class="food-main">🐟 Atum Sólido ao Natural (em Água) (50g)</div>
+<button class="food-toggle" onclick="toggleSubs(this)">Ver substituições ▾</button>
+<div class="food-subs">
+<span>Frango Desfiado (Peito) (40g)</span>
+<span>Carne Bovina Moída, Patinho Refogado (40g)</span>
+<span>Salmão Sem Pele Grelhado (25g)</span>
+<span>Lombo de Porco Assado (30g)</span>
+<span>Proteína de Soja Texturizada, Cozida (35g)</span>
+<span>Carne Bovina Cozida ou Grelhada, Corte Magro (30g)</span>
+</div>
+</div>
+<div class="food-item">
+<div class="food-main">🧀 Requeijão Cremoso Light (30g)</div>
+<button class="food-toggle" onclick="toggleSubs(this)">Ver substituições ▾</button>
+<div class="food-subs">
+<span>Queijo Cottage (65g)</span>
+<span>Creme de Ricota Light (40g)</span>
+<span>Queijo Muçarela (15g)</span>
+<span>Queijo de Minas Frescal Orgânico (20g)</span>
+<span>Iogurte Natural Desnatado (165g)</span>
+<span>Queijo de Coalho (15g)</span>
+</div>
+</div>
+<div class="food-item"><div class="food-main">🥬 Alface, Tomate, Cenoura Ralada à vontade</div></div>
+<div class="food-item"><div class="food-main">🍎 Fruta (Anexo 1), 1 Porção</div></div>
+<div class="recipe"><strong>💡 Sugestão: Sanduíche de Atum</strong><br>
+1. Empilhe nesta ordem: pão, alface, tomate, cenoura ralada, atum, requeijão cremoso e pão.<br>
+2. Seu sanduíche de atum está pronto para ser saboreado!</div>
+</div>
+
 
 <div class="card">
 <div class="meal-header">
@@ -539,7 +604,51 @@ Compras
 <div class="food-item">
 <div class="food-main">🥗 Legumes e Verduras (Anexo 2), 1 Porção (150g)</div>
 </div>
+<div class="food-item">
+<div class="food-main">🥛 Leite de Vaca Integral (150g) <span class="chg new">novo</span></div>
+<button class="food-toggle" onclick="toggleSubs(this)">Ver substituições ▾</button>
+<div class="food-subs">
+<span>Queijo de Coalho (20g)</span>
+<span>Queijo de Minas Frescal Orgânico (35g)</span>
+<span>Queijo Cottage (100g)</span>
+<span>Leite em Pó Integral (15g)</span>
+</div>
+</div>
 <div class="recipe"><strong>💡 Sugestão: Jantar Nordestino Tradicional</strong><br>Cuscuz com ovo e legumes variados.</div>
+</div>
+
+<div class="card">
+<div class="meal-header">
+<div class="meal-icon">🍔</div>
+<div><div class="meal-title">Jantar</div><div class="meal-time">Opção 2 · alternativa</div></div>
+</div>
+<div class="food-item"><div class="food-main">🥖 Pão Francês, 1 Unidade média (50g)</div></div>
+<div class="food-item">
+<div class="food-main">🥩 Carne Bovina Moída, Patinho Refogado (70g)</div>
+<button class="food-toggle" onclick="toggleSubs(this)">Ver substituições ▾</button>
+<div class="food-subs">
+<span>Peito de Frango Sem Pele Cru (95g)</span>
+<span>Peito de Frango Sem Pele Grelhado (70g)</span>
+<span>Carne Bovina Crua, Corte Magro (85g)</span>
+</div>
+</div>
+<div class="food-item">
+<div class="food-main">🧀 Queijo Muçarela, 1 Fatia (20g)</div>
+<button class="food-toggle" onclick="toggleSubs(this)">Ver substituições ▾</button>
+<div class="food-subs">
+<span>Requeijão Cremoso Light (30g)</span>
+<span>Queijo de Coalho (15g)</span>
+<span>Queijo de Minas Frescal Orgânico (25g)</span>
+<span>Queijo Cottage (70g)</span>
+</div>
+</div>
+<div class="food-item"><div class="food-main">🥬 Alface, Tomate e Cebola à vontade</div></div>
+<div class="recipe"><strong>💡 Sugestão: Hambúrguer Caseiro</strong><br>
+1. Tempere os hambúrgueres com sal e pimenta a gosto. Lave e prepare alface, tomate e cebola.<br>
+2. Aqueça um pouco de óleo ou manteiga em fogo médio-alto e grelhe por 4 a 5 minutos de cada lado. Nos últimos minutos, coloque a muçarela por cima para derreter.<br>
+3. Enquanto isso, corte o pão ao meio e toste levemente na frigideira até dourar.<br>
+4. Monte: pão, hambúrguer com queijo, alface, tomate e cebola. Ketchup e mostarda a gosto.<br>
+5. Cubra com a outra metade do pão e sirva na hora.</div>
 </div>
 
 </div>
@@ -803,6 +912,7 @@ Baixar
 <div class="shop-cat-header">🥖 Carboidratos</div>
 <div class="shop-items">
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Pão de Forma Integral</span></div>
+<div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Pão Francês</span></div>
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Cuscuz de Milho</span></div>
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Batata Inglesa</span></div>
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Aveia em Flocos</span></div>
@@ -842,6 +952,8 @@ Baixar
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Leite em Pó Integral</span></div>
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Doce de Leite</span></div>
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Leite Condensado</span></div>
+<div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Queijo Muçarela</span></div>
+<div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Requeijão Cremoso Light</span></div>
 </div>
 </div>
 
@@ -877,6 +989,7 @@ Baixar
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Pepino</span></div>
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Repolho</span></div>
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Chuchu</span></div>
+<div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Cebola</span></div>
 </div>
 </div>
 
@@ -898,6 +1011,7 @@ Baixar
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Pimenta do Reino</span></div>
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Orégano</span></div>
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Limão</span></div>
+<div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Ketchup / Mostarda</span></div>
 </div>
 </div>
 
@@ -922,6 +1036,7 @@ Baixar
 <div class="shop-cat">
 <div class="shop-cat-header">🏪 Outros</div>
 <div class="shop-items">
+<div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Goiabada ou Doce de Banana (troca do doce de leite)</span></div>
 <div class="shop-item"><input type="checkbox" onchange="updateShop()"><span>Adoçante (opcional)</span></div>
 </div>
 </div>
